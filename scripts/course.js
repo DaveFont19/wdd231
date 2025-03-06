@@ -93,16 +93,16 @@ function checkComplete(course) {
 }
 function reduce(a) {
     let total = 0;
-    const p = document.createElement("p")
+    
     a.forEach(course => {
         total += course.credits;
     });
-    p.alt = "Total Credits"
     p.textContent = `Total Credits: ${total}`;
-    listCourses.appendChild(p);
 }
 const listCourses = document.getElementById("courses");
 const btns = document.querySelectorAll('[data-action="display"]');
+const p = document.getElementById("total-credits")
+
 courses.forEach(checkComplete);
 btns.forEach((btn) => {
     btn.addEventListener('click', (e) => {
