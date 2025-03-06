@@ -1,0 +1,93 @@
+@media screen and (min-width: 760px) {
+    header {
+        display: flex;
+        position: static;
+        flex-direction: column;
+    }
+    header div h1{
+        font-size: 400%;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    .navigation a {
+        text-align: center;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .navigation ul {
+        display: flex;
+    }
+
+    div.title {
+        display: flex;
+        margin: 10px;
+        padding: 5px;
+        align-items: center;
+        justify-content: space-evenly;
+
+    }
+
+    div .picture-profile {
+        width: 20%;
+    }
+
+    .navigation {
+        display: flex;
+        z-index: 0;
+        position: static;
+        width: 100%;
+        background-color: #B0AFDE;
+    }
+    .navigation ul{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    main{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .course-work{
+        width: 50%;
+        border: solid 2px #000;
+        margin: 0px 4%;
+    }
+    main .colima{
+        width: 35%;
+        border: solid 2px #000;
+    }
+    main .certificate{
+        width: 100%;
+    }
+    .list-classes {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        padding: 0px;
+    }
+    .list-classes .cse{
+        border-radius: 5%;
+        padding: 7px 10px;
+        
+    }
+    .list-classes .wdd{
+        border-radius: 5%;
+        padding: 7px 10px;
+
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

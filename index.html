@@ -1,12 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
-    <title>Normalize</title>
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/nav.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <title>Home Page</title>
 </head>
+
 <body>
-    
+    <header class="header">
+        <div class="title">
+            <img loading="lazy" src="images/profile.jpg" alt="picture profile" class="picture-profile">
+            <h1>David Fontes</h1>
+        </div>
+        <a id="menu" href="#"></a>
+        <nav class="navigation">
+            <ul>
+                <li><a href="#" title="Home">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="https://github.com/DaveFont19">GitHub Profile</a></li>
+                <li><a href="https://www.linkedin.com/in/david-fontes-4828b7211/">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 class="home">Home</h2>
+        <section class="course-work">
+            <h2>Course Work</h2>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+        <section class="colima">
+            <h2>Colima, Mexico</h2>
+            <figure>
+                <img loading="lazy" src="images/Ciudad-de-Colima_11zon.jpg" alt="Colima City" class="colima-city">
+                <figcaption class="figcaption">Colima Downtown</figcaption>
+            </figure>
+        </section>
+        <section class="certificate">
+            <h2 class="Web">Web an Computer Programming Certificate</h2>
+            <div >
+                <ul class="list-select">
+                    <li data-action="display" value="all">All</li>
+                    <li data-action="display" value="cse">CSE</li>
+                    <li data-action="display" value="wdd">WDD</li>
+                </ul>
+            </div>
+            <div >
+                <ul class="list-classes" id="courses">
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="foot"><span>&copy 2025 </span><i class="fa-solid fa-bolt"></i> David Alonso Fontes Luna <i
+                class="fa-solid fa-bolt"></i> Colima, Mexico <img loading="lazy" src="images/mexicoFlag.png"
+                alt="Mexico Flag"></p>
+        <p id="currentyear"><span>Last Modified</span> <span id="year"></span></p>
+    </footer>
 </body>
+
 </html>
