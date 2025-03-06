@@ -29,6 +29,7 @@ p {
 
 div .picture-profile {
     width: 40%;
+    height: 100%;
 }
 
 #menu {
@@ -187,6 +188,7 @@ color: #4D2F65
 }
 footer img{
     width: 7%;
+    height: 10%;
 }
 .hide{
     display: none;

@@ -82,7 +82,6 @@ function checkComplete(course) {
     if (course.completed == true) {
         li.className = `${course.subject} complete`;
         li.textContent = `✔ ${course.subject} ${course.number}`;
-
     }
     else {
         li.className = `${course.subject} incomplete`;
@@ -101,7 +100,6 @@ function reduce(a) {
 }
 const listCourses = document.getElementById("courses");
 const btns = document.querySelectorAll('[data-action="display"]');
-
 courses.forEach(checkComplete);
 btns.forEach((btn) => {
     btn.addEventListener('click', (e) => {
@@ -119,7 +117,6 @@ btns.forEach((btn) => {
             courses.forEach(checkComplete);
             reduce(courses);
         }
-
     })
 })
 reduce(courses);
