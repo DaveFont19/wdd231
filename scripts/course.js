@@ -81,10 +81,12 @@ function checkComplete(course) {
     const li = document.createElement("li");
     if (course.completed == true) {
         li.className = `${course.subject} complete`;
+        li.alt = `${course.subject}`
         li.textContent = `✔ ${course.subject} ${course.number}`;
     }
     else {
         li.className = `${course.subject} incomplete`;
+        li.alt = `${course.subject}`
         li.textContent = `✖ ${course.subject} ${course.number}`;
     }
     listCourses.appendChild(li);
@@ -95,6 +97,7 @@ function reduce(a) {
     a.forEach(course => {
         total += course.credits;
     });
+    p.alt = "Total Credits"
     p.textContent = `Total Credits: ${total}`;
     listCourses.appendChild(p);
 }
