@@ -92,12 +92,7 @@ function checkComplete(course) {
     listCourses.appendChild(li);
 }
 function reduce(a) {
-    let total = 0;
-    
-    a.forEach(course => {
-        total += course.credits;
-    });
-    p.textContent = `Total Credits: ${total}`;
+  console.log("vamos a ver que show");
 }
 const listCourses = document.getElementById("courses");
 const btns = document.querySelectorAll('[data-action="display"]');
