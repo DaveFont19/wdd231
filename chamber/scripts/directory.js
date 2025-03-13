@@ -25,6 +25,7 @@ function displayCards() {
             img.src = `images/${member.image}`
             img.loading = "lazy";
             img.className = "member-img"
+            img.alt =`${member.name}`;
             p.innerHTML = `<strong>Email: </strong>${member.email}<br>
             <strong>Phone: </strong>${member.phone}<br>
             <strong>URL: </strong>${member.website}<br>
