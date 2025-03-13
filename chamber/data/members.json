@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Sahara Tech Solutions",
+    "address": "123 Dune Street, Timbuktu, Mali",
+    "phone": "+223 45 67 89 01",
+    "email": "contact@saharatech.ml",
+    "website": "https://saharatech.ml",
+    "image": "saharatech.png",
+    "membership": 3,
+    "description": "Leader in technological solutions for the desert."
+  },
+  {
+    "name": "Oasis Eco Energy",
+    "address": "456 Solar Road, Timbuktu, Mali",
+    "phone": "+223 34 56 78 90",
+    "email": "info@oasiseco.ml",
+    "website": "https://oasiseco.ml",
+    "image": "oasiseco.png",
+    "membership": 2,
+    "description": "Renewable energy for communities in the Sahel."
+  },
+  {
+    "name": "Djenne Artisans",
+    "address": "789 Market Square, Timbuktu, Mali",
+    "phone": "+223 23 45 67 89",
+    "email": "support@djenneartisans.ml",
+    "website": "https://djenneartisans.ml",
+    "image": "djenneartisans.png",
+    "membership": 1,
+    "description": "Malian art and culture in each piece."
+  },
+  {
+    "name": "Azalai Desert Tours",
+    "address": "101 Caravan Street, Timbuktu, Mali",
+    "phone": "+223 12 34 56 78",
+    "email": "booking@azalaitours.ml",
+    "website": "https://azalaitours.ml",
+    "image": "azalaitours.png",
+    "membership": 3,
+    "description": "Explore the desert with expert guides."
+  },
+  {
+    "name": "Niger Fresh Foods",
+    "address": "202 Riverfront Ave, Timbuktu, Mali",
+    "phone": "+223 98 76 54 32",
+    "email": "sales@nigerfresh.ml",
+    "website": "https://nigerfresh.ml",
+    "image": "nigerfresh.png",
+    "membership": 2,
+    "description": "Fresh and local products for the community."
+  },
+  {
+    "name": "Sankoré Digital Academy",
+    "address": "303 Knowledge Street, Timbuktu, Mali",
+    "phone": "+223 87 65 43 21",
+    "email": "admin@sankoredigital.ml",
+    "website": "https://sankoredigital.ml",
+    "image": "sankoredigital.png",
+    "membership": 1,
+    "description": "Digital education for the future of Africa."
+  },
+  {
+    "name": "Sahel Textiles",
+    "address": "404 Weaver Road, Timbuktu, Mali",
+    "phone": "+223 76 54 32 10",
+    "email": "info@saheltextiles.ml",
+    "website": "https://saheltextiles.ml",
+    "image": "saheltextiles.png",
+    "membership": 3,
+    "description": "Traditional fabrics with a modern touch."
+  }
+]

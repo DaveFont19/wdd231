@@ -14,16 +14,83 @@
     <meta property="og:url" content="">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
     <link rel="stylesheet" href="styles/directory.css">
     <link rel="icon" href="images/favicon.ico">
-    <script src="scripts/directory.js"></script>
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/header.js" defer></script>
+    <script src="scripts/date.js" defer></script>
     <title>Timbuktu Chamber of Commerce</title>
 </head>
 
 <body>
-
+    <header>
+        <figure class="figure">
+            <img src="images/Timbuktu-logo.png" alt="Timbuktu-logo" width="40px">
+            <div>
+                <h2 class="h2-title">Timbuktu</h2>
+                <figcaption>Chamber of Commerce</figcaption>
+            </div>
+        </figure>
+        <button id="myButton"></button>
+        <nav id="animate">
+            <ul class="menuLinks">
+                <li><a href="#" title="home">Home</a></li>
+                <li class="current-menu-item" style="border-bottom: rgb(104, 18, 33) dashed 1px;"><a
+                        href="#">Directory</a></li>
+                <li><a href="#" title="servicew">Join</a></li>
+                <li><a href="#" title="History">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <hero>
+            <img src="images/Timbuktu-hero.webp" alt="" class="imageHero">
+        </hero>
+        <h1>
+            Home
+        </h1>
+        <section class="section-events">
+            <h2>Events</h2>
+            <div class="events"></div>
+        </section>
+        <section class="section-current">
+            <h2>Current Weather</h2>
+            <div id="current-weather"></div>
+        </section>
+        <section class="section-forecast">
+            <h2>Weather Forecast</h2>
+            <div id="weather-forecast"></div>
+        </section>
+        <div class="cards-button">
+            <button data-action="order">Cards</button>
+            <button data-action="order">List</button>
+        </div>
+        <section class="card-container">
+        </section>
+    </main>
+    <footer>
+        <h3>Timbuktu Chamber of Commerce</h3>
+        <p>20 Rue De La Paix <br>
+            Timbuktu, Mali 999 <br>
+            info@timbuktucc.org <br>
+            (223) 555-2300</p>
+        <div class="social-logos">
+            <a loading="lazy" href="#"><img src="images/youtube.png" alt="Youtube Logo" class="social-media"></a>
+            <a loading="lazy" href="#"><img src="images/twitter.svg.png" alt="Twitter Logo" class="social-media"></a>
+            <a loading="lazy" href="#"><img src="images/linkedin.webp" alt="Linkedin Logo" class="social-media"></a>
+        </div>
+        <p>WDD231 Class Project <br>
+            David Alonso Fontes</p>
+        <p class="foot"><span>&copy; 2025 </span><i class="fa-solid fa-bolt"></i> David Alonso Fontes Luna <i
+                class="fa-solid fa-bolt"></i> Colima, Mexico <img loading="lazy" src="images/mexicoFlag.png"
+                alt="Mexico Flag"></p>
+        <p id="currentyear"><span>Last Modified</span> <span id="year"></span></p>
+    </footer>
 </body>
 
 </html>

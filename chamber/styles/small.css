@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+}
+:root{
+    --background: rgb(236, 243, 254);
+}
+
+
+header,
+footer {
+    padding: 20px 20px;
+    background-color: var(--background);}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: end;
+
+}
+
+figure.figure {
+    display: flex;
+
+    gap: 15px;
+
+}
+
+nav {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+}
+
+nav ul {
+    overflow: hidden;
+}
+
+nav.open {
+    grid-column: 1 / -1;
+    width: 100%;
+    background-color: rgb(236, 254, 237);
+    grid-template-rows: 1fr;
+    border: 2px solid rgb(117, 117, 117);
+    margin-top: 10px;
+}
+
+figcaption {
+    font-size: 10px;
+}
+
+h2.h2-title {
+    font-size: 20px;
+}
+
+#myButton::before {
+    content: "\2630";
+}
+
+#myButton {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: black;
+    cursor: pointer;
+    width: 100%;
+    text-align: right;
+    padding: .25rem 2vw;
+}
+
+ul.menuLinks li a {
+    border-bottom: rgb(104, 18, 33) dashed 1px;
+    display: block;
+    padding: .75rem 2vw;
+    color: #000000;
+    text-decoration: none;
+}
+
+ul.menuLinks li a:hover {
+    background-color:rgb(0, 0, 0);
+    color: #fff;
+}
+
+ul.menuLinks {
+    list-style: none;
+    padding: 0 20px;
+}
+
+#myButton.open::before {
+    content: "X";
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 10px;
+}
+
+footer p {
+    text-align: start;
+}
+footer div.social-logos{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer div a img.social-media{
+    width: 60px;
+    height: 80%;
+}
+#currentyear,
+#year {
+    font-weight: 500;
+    color: #4D2F65;
+}
+
+footer img {
+    width: 7%;
+    height: 10%;
+}
