@@ -89,6 +89,9 @@ ul.menuLinks {
 #myButton.open::before {
     content: "X";
 }
+.current-menu-item{
+    border-bottom: rgb(104, 18, 33) dashed 2px;
+}
 
 footer {
     display: flex;
