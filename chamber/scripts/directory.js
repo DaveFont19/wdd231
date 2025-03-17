@@ -116,6 +116,7 @@ apitoday.then((data) => {
     const figcaption = document.createElement('figcaption');
     const p = document.createElement('p');
     img.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+    img.alt = "weather image"
     figcaption.textContent = data.weather[0].description;
     p.innerHTML = `<strong>Temperature: </strong>${Math.trunc(data.main.temp)}°F<br>
     <strong>High: </strong>${Math.trunc(data.main.temp_max)}<br>

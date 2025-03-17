@@ -60,6 +60,9 @@ div#current-weather {
     justify-content: space-evenly;
     align-items: center;
 }
+div figure img{
+    width: 50px;
+}
 figcaption{
     text-align: center;
 }
