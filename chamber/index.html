@@ -18,12 +18,12 @@
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/index.css">
     <link rel="icon" href="images/favicon.ico">
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/index.js" defer></script>
     <script src="scripts/header.js" defer></script>
     <script src="scripts/date.js" defer></script>
-    <title>Timbuktu Chamber of Commerce | Directory</title>
+    <title>Timbuktu Chamber of Commerce | Home</title>
 </head>
 
 <body>
@@ -35,12 +35,11 @@
                 <figcaption>Chamber of Commerce</figcaption>
             </div>
         </figure>
-        <button id="myButton" alt="button" ></button>
+        <button id="myButton" alt="button"></button>
         <nav id="animate">
             <ul class="menuLinks">
-                <li><a href="./index.html" title="home">Home</a></li>
-                <li class="current-menu-item"><a
-                        href="./">Directory</a></li>
+                <li class="current-menu-item"><a href="./index.html" title="home">Home</a></li>
+                <li><a href="./directory.html">Directory</a></li>
                 <li><a href="#" title="servicew">Join</a></li>
                 <li><a href="#" title="History">Discover</a></li>
             </ul>
@@ -48,15 +47,24 @@
     </header>
     <main>
         <h1>
-            Directory
+            Home
         </h1>
-        <hero>
-            <img src="images/Timbuktu-hero.webp" alt="" class="imageHero">
+        <hero class="hero">
+            <img src="images/Timbuktu-index.webp" alt="" class="imageHero">
+            <a href="#" class="sign-up">Sign up Now!</a>
         </hero>
-        <div class="cards-button">
-            <button data-action="order">Cards</button>
-            <button data-action="order">List</button>
-        </div>
+        <section class="section-events">
+            <h2>Events</h2>
+            <div class="events" ><span>Current Event</span></div>
+        </section>
+        <section class="section-current">
+            <h2>Current Weather</h2>
+            <div id="current-weather"></div>
+        </section>
+        <section class="section-forecast">
+            <h2>Weather Forecast</h2>
+            <div id="weather-forecast"></div>
+        </section>
         <section class="card-container">
         </section>
     </main>

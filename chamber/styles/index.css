@@ -1,0 +1,211 @@
+main {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+main h1 {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+hero {
+    position: relative;
+}
+
+hero .imageHero {
+    width: 100%;
+}
+
+hero.hero .sign-up {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(59, 132, 229);
+    color: white;
+    padding: 10px 12px;
+    border-radius: 10px;
+}
+
+hero.hero .sign-up:hover {
+    background-color: rgb(37, 81, 140);
+}
+
+section.section-events {
+    height: 150px;
+    border-radius: 10px;
+}
+
+section.section-events span {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+div.events {
+    height: 35%;
+}
+
+h2 {
+    background-color: #2B4855;
+    color: #C7E6D0;
+    padding: 5px 10px;
+}
+
+#current-weather,
+#weather-forecast,
+div.events {
+    background-color: #C7E6D0;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+div#current-weather {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+div figure img {
+    width: 50px;
+}
+
+figcaption {
+    text-align: center;
+}
+
+card.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 15px;
+    background-color: #EFD7D7;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+card .head-card {
+
+    color: #6A2A2A;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.silver-b {
+    background-color: rgb(190, 190, 190);
+}
+
+.gold-b {
+    background-color: rgb(232, 185, 4);
+}
+
+.silver {
+    color: rgb(56, 56, 56);
+}
+
+.gold {
+    color: rgb(100, 70, 20);
+}
+
+card .head-card h3 {
+    font-weight: 900;
+}
+
+img.member-img {
+    width: 100px;
+}
+
+@media screen and (min-width: 760px) {
+    header {
+        display: flex;
+        justify-content: space-between
+    }
+
+    button#myButton {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav ul.menuLinks {
+        display: flex;
+    }
+
+    ul.menuLinks li a {
+        border-bottom: none;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+    }
+
+    hero {
+        grid-column: 1 / -1;
+    }
+
+    h2 {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    section.section-events {
+        border-radius: 10px;
+        grid-column: 1/3;
+        display: flex;
+        flex-direction: column;
+        grid-row: 3/4;
+        height: 100% !important;
+    }
+
+    section.section-current {
+        grid-column: 3/4;
+        grid-row: 3/4;
+        height: 100% !important;
+    }
+
+    section.section-forecast {
+        grid-column: 4/5;
+        grid-row: 3/4;
+        height: 100% !important;
+    }
+
+    div.cards-button {
+        grid-column: 1 / -1;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    section.card-container {
+        grid-column: 1 / -1;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    div.events {
+        height: 100% !important;
+    }
+
+    div#weather-forecast {
+        height: 45%;
+        padding-left: 10px;
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 1120px) {
+    section.card-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

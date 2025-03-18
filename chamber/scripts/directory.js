@@ -41,39 +41,6 @@ function displayCards() {
         )
     })
 }
-const weatherApi = {
-    getWeather: (lat, lon, unitDefault) => {
-        const url = new URL(baseUrl + "/weather");
-        url.searchParams.append("lat", lat);
-        url.searchParams.append("lon", lon);
-        url.searchParams.append("units", unitDefault);
-        url.searchParams.append("appid", API_KEY);
-
-        return fetch(url.toString())
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error(`Error HTTP: ${response.status}`);
-                }
-                return response.json();
-            });
-    }
-}
-const foreCastapi = {
-    getWeather: (lat, lon, unitDefault) => {
-        const url = new URL(baseUrl + "/forecast");
-        url.searchParams.append("lat", lat);
-        url.searchParams.append("lon", lon);
-        url.searchParams.append("appid", API_KEY);
-        url.searchParams.append("units", unitDefault);
-        return fetch(url.toString())
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error(`Error HTTP: ${response.status}`);
-                }
-                return response.json();
-            });
-    }
-}
 function displayList() {
     members.then((members) => {
         const ul = document.createElement('ul');
@@ -100,43 +67,9 @@ function displayList() {
 
 }
 const cardsContainer = document.querySelector('.card-container');
-const API_KEY = "b45208ded9c8ad5a69bce004a6e965da";
-const baseUrl = "https://api.openweathermap.org/data/2.5";
-const members = getData();
-const lan = "16.77348"
-const lon = "-3.00742"
-const apitoday = weatherApi.getWeather(lan, lon, "imperial");
-const api5Days = foreCastapi.getWeather(lan, lon, "imperial");
 const orderBtns = document.querySelectorAll('[data-action="order"]');
+const members = getData();
 
-apitoday.then((data) => {
-    const currentWeather = document.getElementById('current-weather');
-    const figure = document.createElement('figure')
-    const img = document.createElement('img');
-    const figcaption = document.createElement('figcaption');
-    const p = document.createElement('p');
-    img.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
-    img.alt = "weather image"
-    figcaption.textContent = data.weather[0].description;
-    p.innerHTML = `<strong>Temperature: </strong>${Math.trunc(data.main.temp)}°F<br>
-    <strong>High: </strong>${Math.trunc(data.main.temp_max)}<br>
-    <strong>Low: </strong>${Math.trunc(data.main.temp_min)}<br>
-    <strong>Humidity: </strong>${Math.trunc(data.main.humidity)}%<br>`;
-    figure.appendChild(img);
-    figure.appendChild(figcaption);
-    currentWeather.appendChild(figure);
-    currentWeather.appendChild(p);
-
-})
-
-api5Days.then((data) => {
-    const weatherForecast = document.getElementById('weather-forecast');
-    const p = document.createElement('p');
-    p.innerHTML = `<strong>Today: </strong>${Math.trunc(data.list[0].main.temp)}°F<br>
-    <strong>Tomorrow: </strong>${Math.trunc(data.list[8].main.temp)}°F<br>
-    <strong>Day after tomorrow: </strong>${Math.trunc(data.list[16].main.temp)}°F`;
-    weatherForecast.appendChild(p);
-})
 displayCards();
 orderBtns.forEach(btn => {
     btn.addEventListener('click', (e) => {
