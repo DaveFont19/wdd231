@@ -21,14 +21,14 @@ hero.hero .sign-up {
     position: absolute;
     bottom: 20px;
     right: 20px;
-    background-color: rgb(59, 132, 229);
+    background-color: rgb(28, 63, 109);
     color: white;
     padding: 10px 12px;
     border-radius: 10px;
 }
 
 hero.hero .sign-up:hover {
-    background-color: rgb(37, 81, 140);
+    background-color: rgb(14, 30, 51);
 }
 
 section.section-events {
