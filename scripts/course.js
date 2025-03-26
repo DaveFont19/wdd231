@@ -80,20 +80,26 @@ const courses = [
 function checkComplete(course) {
     const li = document.createElement("li");
     if (course.completed == true) {
-        li.className = `${course.subject} complete`;
+        li.className = `${course.subject} complete term`;
         li.alt = `${course.subject}`
         li.textContent = `✔ ${course.subject} ${course.number}`;
+        li.addEventListener('click', () =>{
+            displayCourseMOdal(course);
+        })
     }
     else {
-        li.className = `${course.subject} incomplete`;
+        li.className = `${course.subject} incomplete term`;
         li.alt = `${course.subject}`
         li.textContent = `✖ ${course.subject} ${course.number}`;
+        li.addEventListener('click', () =>{
+            displayCourseMOdal(course);
+        })
     }
     listCourses.appendChild(li);
 }
 function reduce(a) {
     let total = 0;
-    
+
     a.forEach(course => {
         total += course.credits;
     });
@@ -101,7 +107,8 @@ function reduce(a) {
 }
 const listCourses = document.getElementById("courses");
 const btns = document.querySelectorAll('[data-action="display"]');
-const p = document.getElementById("total-credits")
+const p = document.getElementById("total-credits");
+const dialog = document.getElementById("course-details");
 
 courses.forEach(checkComplete);
 btns.forEach((btn) => {
@@ -122,4 +129,23 @@ btns.forEach((btn) => {
         }
     })
 })
+
+function displayCourseMOdal(course){
+    dialog.innerHTML = "";
+    dialog.innerHTML = `
+    <button id="closeModal">✖</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}<h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p></strong>Certificate</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>`;
+
+    dialog.showModal();
+
+    closeModal.addEventListener('click', () =>{
+        dialog.close();
+    })
+}
+
 reduce(courses);
