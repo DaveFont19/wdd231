@@ -147,5 +147,8 @@ dialog#membership-information p {
         grid-template-columns: 1fr 1fr;
         gap: 20px;
     }
+    h1{
+        grid-column: 1/3;
+    }
 
 }
