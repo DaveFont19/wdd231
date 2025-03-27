@@ -1,0 +1,32 @@
+main div{
+    background-color: rgb(167, 233, 233);
+    margin: 20px 10px;
+    padding: 20px;
+}
+main div p.welcome{
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 760px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    button#myButton {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav ul.menuLinks {
+        display: flex;
+    }
+
+    ul.menuLinks li a {
+        border-bottom: none;
+    }
+}

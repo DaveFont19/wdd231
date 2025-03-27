@@ -1,21 +1,128 @@
-main form {
-    display: flex;
-    flex-direction: column;
+main {
+    display: grid;
     align-items: center;
     margin: 20px;
 }
-main form label{
+
+main form label {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 100%;
 }
+
 main form button {
     margin-top: 20px;
+    background-color: rgb(24, 133, 242);
+    border-radius: 5px;
 }
+
+main form button:hover {
+    background-color: rgb(11, 64, 117);
+    color: white;
+}
+
+main section {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+main section card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    background-color: #FFF4E5;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.bronze:hover {
+    background-color: #CE8946;
+    color: white;
+}
+
+.silver:hover {
+    background-color: #C4C4C4;
+    color: #000;
+}
+
+.gold:hover {
+    background-color: #EFBF04;
+    color: #000;
+}
+
+h3 span.bronze-title {
+    color: #794f26;
+}
+
+h3 span.silver-title {
+    color: #555555;
+}
+
+h3 span.gold-title {
+    color: #856A00;
+}
+
+dialog.open {
+    align-self: center;
+    justify-self: center;
+    width: 70%;
+    height: 50%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+@keyframes openFade {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+dialog.open {
+    animation: openFade 0.3s ease-out;
+}
+
+dialog#membership-information p {
+    font-size: large;
+    margin-top: 20px;
+}
+
+dialog#membership-information h3 {
+    grid-column: 1 / 4;
+}
+
+dialog#membership-information button {
+    grid-column: 4/5;
+    height: 25px;
+    width: 40px;
+    margin-left: 50%;
+    background-color: rgb(24, 133, 242);
+}
+
+dialog#membership-information button:hover {
+    grid-column: 4/5;
+    height: 25px;
+    width: 40px;
+    background-color: rgb(11, 64, 117);
+    color: white;
+}
+
+dialog#membership-information p {
+    grid-column: 1/-1;
+}
+
 @media screen and (min-width: 760px) {
     header {
         display: flex;
-        justify-content: space-between
+        justify-content: space-between;
     }
 
     button#myButton {
@@ -34,5 +141,11 @@ main form button {
     ul.menuLinks li a {
         border-bottom: none;
     }
-    
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
 }
