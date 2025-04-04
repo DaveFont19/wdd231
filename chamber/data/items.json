@@ -1,0 +1,53 @@
+{
+    "items": [
+      {
+        "name": "Djinguereber Mosque",
+        "image": "djinguereber-mosque",
+        "address": "Timbuktu, Mali",
+        "description": "Built in 1327 under the orders of Mansa Musa, this iconic mosque is one of the oldest in West Africa. It is known for its unique mud-brick construction and serves as an important religious and historical site in Timbuktu."
+      },
+      {
+        "name": "Sidi Yahya Mosque",
+        "image": "sidi-yahya-mosque",
+        "address": "Timbuktu, Mali",
+        "description": "Constructed in the early 15th century, this mosque is part of Timbuktu’s ancient religious complex. It is famous for its legend that the doors of the mosque would remain closed until the end of time."
+      },
+      {
+        "name": "Sankore Mosque",
+        "image": "sankore-mosque",
+        "address": "Timbuktu, Mali",
+        "description": "Also known as the University of Sankore, this mosque was a center of Islamic learning during the Mali Empire. Scholars from across Africa studied theology, mathematics, and astronomy here."
+      },
+      {
+        "name": "Heinrich Barth's House",
+        "image":"heinrich-barths-house",
+        "address": "Timbuktu, Mali",
+        "description": "The residence of Heinrich Barth, a 19th-century German explorer who extensively documented the history, culture, and geography of West Africa during his travels."
+      },
+      {
+        "name": "Tomb of Askia",
+        "image":"tomb-of-askia",
+        "address": "Gao, Mali",
+        "description": "A UNESCO World Heritage site, the Tomb of Askia was built by Askia Muhammad I, the emperor of the Songhai Empire. It is a remarkable example of Sudano-Sahelian architecture and a significant Islamic landmark."
+      },
+      {
+        "name": "Cathedral of Bamako",
+        "image":"cathedral-of-bamako",
+        "address": "Bamako, Mali",
+        "description": "A Roman Catholic cathedral built during the French colonial period. It is an important religious and architectural landmark in the capital of Mali."
+      },
+      {
+        "name": "Sahara Desert",
+        "image": "sahara-desert",
+        "address": "Northern Mali and beyond",
+        "description": "The world's largest hot desert, stretching across North Africa. In Mali, it is home to nomadic Tuareg communities, ancient trade routes, and breathtaking dunes."
+      },
+      {
+        "name": "National Park of Mali",
+        "image": "national-park-of-mali",
+        "address": "Bamako, Mali",
+        "description": "A large, scenic park in the capital city featuring botanical gardens, wildlife, walking trails, and cultural sites. It serves as a recreational and conservation area for residents and visitors."
+      }
+    ]
+  }
+  

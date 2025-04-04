@@ -5,24 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="fb:app_id" content="1782718875903652">
-    <meta name="description" content="Discover business opportunities in Timbuktu! The Timbuktu Chamber of Commerce connects entrepreneurs, supports local businesses, and fosters economic growth. Join us today!">
+    <meta name="description"
+        content="Directory with a list of locacl business and other organizations that belong to the chamber of commerce">
     <meta name="author" content="David Alonso Fontes">
     <meta property="og:title" content="Timbuktu Chamber of Commerce">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://www.britannica.com/place/Timbuktu-Mali">
-    <meta property="og:url" content="https://davefont19.github.io/wdd231/chamber/index.html">
+    <meta property="og:url" content="https://davefont19.github.io/wdd231/chamber/directory.html">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/discover.css">
     <link rel="icon" href="images/favicon.ico">
-    <script src="scripts/index.js" defer></script>
+    <script src="scripts/discover.js" defer></script>
     <script src="scripts/header.js" defer></script>
     <script src="scripts/date.js" defer></script>
-    <title>Timbuktu Chamber of Commerce | Home</title>
+    <title>Timbuktu Chamber of Commerce | Discover</title>
 </head>
 
 <body>
@@ -34,38 +35,22 @@
                 <figcaption>Chamber of Commerce</figcaption>
             </div>
         </figure>
-        <button id="myButton" alt="button"></button>
+        <button id="myButton" alt="button" ></button>
         <nav id="animate">
             <ul class="menuLinks">
-                <li class="current-menu-item"><a href="./index.html" title="home">Home</a></li>
-                <li><a href="./directory.html">Directory</a></li>
-                <li><a href="./join.html" title="services">Join</a></li>
-                <li><a href="./discover.html" title="history">Discover</a></li>
+                <li><a href="./index.html" title="home">Home</a></li>
+                <li ><a href="./directory.html">Directory</a></li>
+                <li><a href="./join.html" title="servicew">Join</a></li>
+                <li class="current-menu-item"><a href="./discover.html" title="History">Discover</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <h1>
-            Home
+            Discover
         </h1>
-        <hero class="hero">
-            <img src="images/timbuktu-index.webp" alt="" class="imageHero">
-            <a href="join.html" class="sign-up">Sign up Now!</a>
-        </hero>
-        <section class="section-events">
-            <h2>Events</h2>
-            <div class="events" ><span>Current Event</span></div>
-        </section>
-        <section class="section-current">
-            <h2>Current Weather</h2>
-            <div id="current-weather"></div>
-        </section>
-        <section class="section-forecast">
-            <h2>Weather Forecast</h2>
-            <div id="weather-forecast"></div>
-        </section>
-        <section class="card-container">
-        </section>
+        <section class="card-container"></section>
+        <dialog class="modal"></dialog>
     </main>
     <footer>
         <h3>Timbuktu Chamber of Commerce</h3>

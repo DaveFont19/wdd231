@@ -4,7 +4,7 @@ async function getData() {
         let data = await response.json();
         return data
     } catch (error) {
-        console.error("Error completo:", error);
+        console.error("Whole Error:", error);
     }
 }
 function displayCards() {
