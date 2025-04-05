@@ -1,4 +1,12 @@
 *{
     font-family: "Poppins", sans-serif;
     color: #F5FFA8;
+    background-color: #3E753F;
+}
+div{
+    display: flex;
+}
+img{
+    width: 500px;
+    height: 600px;
 }
