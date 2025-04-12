@@ -25,7 +25,9 @@ figure.figure {
     gap: 15px;
     align-items: center
 }
-
+header figure img{
+    width: 40px;
+}
 nav {
     display: grid;
     grid-template-rows: 0fr;
