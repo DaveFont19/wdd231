@@ -51,6 +51,7 @@ respond.then((respond)=> {
         img.src = `${tree.default_image.small_url}`;
         img.classList = 'imgCard';
         img.setAttribute('loading', 'lazy');
+        img.setAttribute('alt',`${trees.common_name}`)
         div.classList = 'div-container';
         p.innerHTML = `<strong>Common Name: </strong>${tree.common_name}<br>
         <strong>Family: </strong>${tree.family ? tree.family : 'Unknow'}<br>
