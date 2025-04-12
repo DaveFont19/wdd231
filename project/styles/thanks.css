@@ -1,0 +1,33 @@
+:root {
+    --background: rgb(37, 85, 38);
+    --text: #F5FFA8;
+}
+
+* {
+    color: var(--text);
+}
+
+main div {
+    margin: 20px;
+    background-color: var(--text);
+    padding: 15px;
+}
+
+main h1 {
+    color: black;
+}
+
+main div p {
+    color: var(--background);
+}
+
+main div p strong {
+    color: var(--background);
+}
+
+@media screen and (min-width: 680px) {
+    card {
+        margin: 20px;
+    }
+
+}

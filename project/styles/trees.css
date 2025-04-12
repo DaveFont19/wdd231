@@ -1,0 +1,131 @@
+:root {
+    --background: rgb(37, 85, 38);
+    --text: #F5FFA8;
+}
+
+* {
+    color: var(--text);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center
+}
+
+h1 {
+    justify-self: left;
+    margin: 20px;
+    color: black;
+}
+
+#modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+card {
+    width: 80%;
+    margin: 15px;
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: var(--background);
+}
+
+card img {
+    width: 80%;
+    align-self: center;
+}
+
+card button {
+    background-color: rgb(28, 63, 109);
+}
+
+card div button {
+    background-color: rgb(23, 23, 161);
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+card div button:hover {
+    background-color: rgb(15, 15, 102);
+    cursor: pointer;
+}
+
+dialog.open{
+    display: flex;
+    background-color: rgb(110, 110, 110);
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+    align-self: center;
+    justify-self: center;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+dialog div {
+    display: flex;
+    flex-direction: column;
+}
+
+dialog div button {
+    width: 40px;
+    background-color: rgb(23, 23, 161);
+}
+
+dialog div button:hover {
+    width: 42px;
+    background-color: rgb(15, 15, 102);
+    cursor: pointer;
+}
+
+dialog div img {
+    width: 80%;
+    align-self: center;
+}
+
+@media screen and (min-width: 680px) {
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    h1 {
+        grid-column: 1/3;
+    }
+
+    card {
+        margin: 20px;
+    }
+
+}
+
+@media screen and (min-width: 1025px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    h1 {
+        grid-column: 1/4;
+    }
+
+    card img {
+        width: 80%;
+        align-self: center;
+    }
+}

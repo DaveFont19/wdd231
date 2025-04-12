@@ -42,7 +42,6 @@ function displayVisti() {
     } else {
         const lastDate = new Date(parseInt(lastVisit));
         const timeDiff = now - lastDate;
-        console.log(timeDiff);
         const daysDiff = Math.floor(timeDiff / (1000 * 60 * 60 * 24))
         if (daysDiff < 1) {
             dialog.innerHTML = `

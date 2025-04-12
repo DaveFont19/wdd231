@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --background: hwb(121 15% 67%);
+    --text: #F5FFA8;
+}
+
+header,
+footer {
+    padding: 20px 20px;
+    background-color: var(--background);
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: end;
+}
+
+figure.figure {
+    display: flex;
+    gap: 15px;
+    align-items: center
+}
+
+nav {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+}
+
+nav ul {
+    overflow: hidden;
+}
+
+nav.open {
+    grid-column: 1 / -1;
+    width: 100%;
+    background-color: rgb(236, 254, 237);
+    grid-template-rows: 1fr;
+    border: 2px solid rgb(117, 117, 117);
+    margin-top: 10px;
+}
+
+figcaption {
+    font-size: 10px;
+}
+
+h2.h2-title {
+    font-size: 20px;
+    
+    color: var(--text);
+}
+
+#myButton::before {
+    content: "\2630";
+    color: var(--text);
+}
+
+#myButton {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    text-align: right;
+    padding: .25rem 2vw;
+}
+
+ul.menuLinks li a {
+    border-bottom: rgb(104, 18, 33) dashed 1px;
+    display: block;
+    padding: .75rem 2vw;
+    color: black;
+    text-decoration: none;
+}
+
+ul.menuLinks li a:hover {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+}
+
+ul.menuLinks {
+    list-style: none;
+    padding: 0 20px;
+}
+
+#myButton.open::before {
+    content: "X";
+}
+
+.current-menu-item {
+    border-bottom: rgb(104, 18, 33) dashed 2px;
+    background-color: #73da75;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 10px;
+}
+
+footer p {
+    text-align: start;
+}
+
+footer div.social-logos {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer div a img.social-media {
+    width: 35px;
+    height: 30px;
+}
+
+#currentyear,
+#year {
+    font-weight: 500;
+    color: #4D2F65;
+}
+
+footer img {
+    width: 7%;
+    height: 10%;
+}
+
+@media screen and (min-width: 680px) {
+    header {
+        display: flex;
+        justify-content: space-between
+    }
+
+    button#myButton {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav ul.menuLinks {
+        display: flex;
+    }
+
+    ul.menuLinks li a.current-menu-item{
+        color: black;
+    }
+    ul.menuLinks li a.current-menu-item:hover{
+        color: white;
+    }
+    ul.menuLinks li a {
+       color: var(--text);
+       border-bottom: none;
+    }
+}
