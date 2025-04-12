@@ -1,4 +1,4 @@
-const key = "sk-kiWY67e2cde1a859a9403";
+const key = "sk-n9iF67fafa44050539403";
 async function getData() {
     try {
         const response = await fetch(`https://perenual.com/api/v2/species-list?key=${key}`);
